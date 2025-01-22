@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Bucket List</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #220b0b;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #4CAF50; /* Green accent color */
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            padding: 1rem;
+            color: white;
+        }
+
+        /* Bucket List Section */
+        .bucket-list {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            font-size: 1.2rem;
+        }
+
+        /* Icons */
+        .icon {
+            font-size: 1.5rem;
+            margin-right: 10px;
+            color: #4CAF50; /* Green color for icons */
+        }
+
+        /* Completed tasks */
+        .completed {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        .completed .icon {
+            color: #888; /* Lighter color for completed items */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media screen and (max-width: 600px) {
+            .bucket-list {
+                padding: 10px;
+            }
+
+            li {
+                font-size: 1rem;
+            }
+
+            .icon {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Interactive Hover Effects */
+        li:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+        }
+
+        li:hover .icon {
+            color: #FF9800; /* Change icon color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Bucket List</h1>
+    </header>
+
+    <main>
+        <section class="bucket-list">
+            <h2>Things I Want to Do:</h2>
+            <ul>
+                <li class="completed"><span class="icon">&#x2713;</span> Travel to Japan</li>
+                <li><span class="icon">&#9733;</span> Learn to play the guitar</li>
+                <li><span class="icon">&#9733;</span> Skydiving</li>
+                <li><span class="icon">&#9733;</span> Write a novel</li>
+                <li><span class="icon">&#9733;</span> Run a marathon</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by NEERAJ. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
